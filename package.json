@@ -4,6 +4,7 @@
   "description": "## Project title",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon -r dotenv/config index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/DanHancox/music-library#readme",
   "devDependencies": {
-    "eslint": "^8.29.0"
+    "dotenv": "^16.0.3",
+    "eslint": "^8.29.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
