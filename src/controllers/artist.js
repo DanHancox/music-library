@@ -1,4 +1,4 @@
-const db = require('../src/db/index.js');
+const db = require('../db/index');
 
 exports.createArtist = async (req, res) => {
 const { name, genre } = req.body
@@ -9,4 +9,4 @@ try {
 } catch (err) {
     res.status(500).json(err.message)
 }
-}
+};
